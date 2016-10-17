@@ -1,4 +1,4 @@
-baseurl = "https://example.org"
+baseurl = "/"
 languageCode = "ee-et"
 title = "Springbite"
 theme = "hugo-strata-theme"
@@ -106,7 +106,7 @@ paginate = 10
 		[params.contact.form]
 			# Set custom strings for the form if your native
 			# language isn't English
-			name = "Name"
-			email = "Email"
-			message = "Message"
-			submit = "Send message"
+			name = "Nimi"
+			email = "E-mail"
+			message = "Sõnum"
+			submit = "Saada"
