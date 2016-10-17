@@ -1,0 +1,112 @@
+baseurl = "https://example.org"
+languageCode = "ee-et"
+title = "Springbite"
+theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Springbite OÜ"
+	description = "Infotehnoloogiliste ärilahenduste planeerimine, teostamine ja turundamine."
+
+	# Format dates with Go's time formatting
+	date_format = "13.01.2016"
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Karl-Sander Erss**<br>Springbite OÜ<br>karl.erss@gmail.com<br>+37253480849"
+		# The icons will be shown if you enter your username
+		twitter = ""
+		github = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = ""
+
+		copyright = [
+			"&copy; Springbite OÜ",
+			"Design: [HTML5 UP](//html5up.net)",
+			"Images: [Unsplash](//unsplash.com/)"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "Springbite planeerib, teostab ja turundab infotehnoloogilisi ärilahendusi."
+		content = ""
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Tööd"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "https://www.kinnisvara24.ee"
+			thumb = "thumbs/01.jpg"
+			title = "Kinnisvara24"
+			description = "Vastutusalad: _front-end_, x-tee liidestused, maakleribüroode kuulutuste voogude liidestused."
+
+		[[params.portfolio.gallery]]
+			image = "https://konku.ee"
+			thumb = "thumbs/02.jpg"
+			title = "Konku"
+			description = "Kinnisvaraportaal maakleritasuta üüritehingutele. Springbite tegelenud ideest teostuseni."
+
+		[[params.portfolio.gallery]]
+			image = "https://kliendid.koolibri.ee"
+			thumb = "thumbs/03.jpg"
+			title = "Koolibri tellimiskeskkond"
+			description = "Tellimiskeskkond Koolibri püsiklientidele. Seotud tihedalt Directo äritarkvaraga."
+
+		[[params.portfolio.gallery]]
+			image = "https://lehter.com"
+			thumb = "thumbs/04.jpg"
+			title = "Lehter.com"
+			description = "Sotsiaalmeedia agregaator. Kuvab kliendi kodulehel ettevõtte instagrami, facebook'i ja teised postitused."
+
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = false
+		title = "Võta ühendust"
+		content = " "
+
+		phone = "+37253480849"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "karl.erss@gmail.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
